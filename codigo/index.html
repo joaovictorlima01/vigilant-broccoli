@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campanha de Doação</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Campanha de Doação</h1>
+
+    <button id="abrirMenu">☰</button>
+
+    <nav id="menu">
+        <button id="fecharMenu">✖</button>
+
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Doações</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="coluna">
+        <h2>Por que é importante doar?</h2>
+
+        <p>
+            A doação ajuda famílias e pessoas que enfrentam dificuldades.
+            Com pequenos gestos podemos contribuir para uma sociedade mais justa.
+        </p>
+
+        <p>
+            Doar alimentos, roupas e produtos de higiene pode transformar vidas.
+        </p>
+    </section>
+
+    <section class="coluna">
+        <h2>Como você pode ajudar?</h2>
+
+        <ul>
+            <li>Doando alimentos.</li>
+            <li>Doando roupas.</li>
+            <li>Participando de campanhas.</li>
+            <li>Realizando trabalho voluntário.</li>
+            <li>Divulgando ações solidárias.</li>
+        </ul>
+    </section>
+
+</main>
+
+<script>
+const menu = document.getElementById("menu");
+const abrir = document.getElementById("abrirMenu");
+const fechar = document.getElementById("fecharMenu");
+
+abrir.addEventListener("click", () => {
+    menu.style.display = "block";
+    abrir.style.display = "none";
+});
+
+fechar.addEventListener("click", () => {
+    menu.style.display = "none";
+    abrir.style.display = "block";
+});
+</script>
+
+</body>
+</html>
